@@ -1,0 +1,33 @@
+body {
+	background: #03A9F4;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dTable {
+	display: table;
+	width: 50%;
+	color: #000;
+	font-family: sans-serif;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.dRow {
+	display: table-row;
+}
+
+.tHead {
+	background-color: #ffc107;
+	font-weight: bold;
+}
+
+.dColumn {
+	display: table-cell;
+	padding: 8px;
+	border: 1px solid;
+}
