@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import {Provider} from 'react-redux';
+import store from './redux/store/store';
+import './css/PageCss.css'; 
+import LiveStock from './components/LiveStock';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const RenderView = () => {
+	return <Provider store = {store}>
+			<LiveStock />
+		   </Provider>
+}
+
+ReactDOM.render(<RenderView />, document.getElementById('root'));
 registerServiceWorker();
